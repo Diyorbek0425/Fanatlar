@@ -61,36 +61,150 @@ html body main {
   background-color: #E9E9E9;
 }
 html body main .navbar {
+  padding: 10px;
   display: flex;
   flex-direction: row;
-  justify-content: space-between;
+  justify-content: space-around;
   align-items: center;
 }
 html body main .navbar .logo {
   color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
-html body main .navbar .dropdowns .dropdown {
+html body main .navbar .logo h2 {
+  background-color: #60AE24;
+  border-radius: 6px;
+}
+html body main .navbar .logo h2 span {
+  color: #60AE24;
+  background-color: white;
+  border-radius: 6px;
+}
+html body main .navbar .wrap {
+  display: flex;
+  flex-direction: row;
+}
+html body main .navbar .wrap .dropdowns {
+  height: 50px;
+  position: relative;
+  margin-left: 20px;
+}
+html body main .navbar .wrap .dropdowns .dropdown {
   display: flex;
 }
-html body main .navbar .dropdowns .dropdown .btn {
+html body main .navbar .wrap .dropdowns .dropdown:checked {
+  border: none;
+  outline: none;
+}
+html body main .navbar .wrap .dropdowns .dropdown:focus {
+  border: none;
+  outline: none;
+}
+html body main .navbar .wrap .dropdowns .dropdown .btn {
   background-color: #60AE24;
   border: none;
   border-radius: 0;
   color: white;
+  height: 50px;
+  display: flex;
+  align-items: center;
 }
-html body main .navbar .search {
-  background-color: red;
-  width: 190px;
-  height: 60px;
+html body main .navbar .wrap .dropdowns::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: -10px;
+  width: 20px;
+  height: 50px;
+  background-color: #60AE24;
+  transform: skewX(-15deg);
 }
-html body main .navbar .search .searches {
-  width: 100px;
-  height: 100px;
-  background-color: yellow;
+html body main .navbar .wrap .dropdowns::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: -10px;
+  width: 20px;
+  height: 50px;
+  background-color: #60AE24;
+  transform: skewX(-15deg);
 }
-html body main .navbar .search .searches .fas {
-  font-size: 180px;
-  color: white;
+html body main .navbar .wrap .search {
+  width: 50px;
+  height: 50px;
+  position: relative;
+  margin-left: 20px;
+}
+html body main .navbar .wrap .search::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: -10px;
+  width: 20px;
+  height: 50px;
+  background-color: #FFAA00;
+  transform: skewX(-15deg);
+}
+html body main .navbar .wrap .search::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: -10px;
+  width: 20px;
+  height: 50px;
+  background-color: #FFAA00;
+  transform: skewX(-15deg);
+}
+html body main .navbar .wrap .search .searches {
+  width: 100%;
+  height: 100%;
+  background-color: #FFAA00;
+  display: flex;
+  align-items: center;
+}
+html body main .navbar .wrap .search .searches .svg-inline--fa.fa-w-16 {
+  font-size: 30px;
+  color: black;
+  margin: 11px;
+  padding: 0;
+}
+html body main .navbar .wrap form {
+  width: 150px;
+  height: 50px;
+  position: relative;
+  margin-left: 20px;
+}
+html body main .navbar .wrap form::before {
+  content: "";
+  position: absolute;
+  top: 0px;
+  left: -10px;
+  width: 20px;
+  height: 50px;
+  background-color: white;
+  transform: skewX(-15deg);
+}
+html body main .navbar .wrap form::after {
+  content: "";
+  position: absolute;
+  top: 0px;
+  right: -10px;
+  width: 20px;
+  height: 50px;
+  background-color: white;
+  transform: skewX(-15deg);
+}
+html body main .navbar .wrap form input {
+  border: none;
+  width: 100%;
+  height: 100%;
+  padding: 15px;
+}
+html body main .navbar .wrap form input:focus {
+  border: none;
+  outline: none;
 }
 
 /*# sourceMappingURL=style.css.map */
