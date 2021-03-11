@@ -272,5 +272,50 @@ html body main .secondNav .musobaqalar a:hover {
   color: white;
   background-color: #60AE24;
 }
+html body main .country .container .row .col .ang {
+  font-weight: 700;
+  margin: 30px 0;
+  border-bottom: 1px solid #929090;
+  padding-bottom: 8px;
+}
+html body main .country .container .row .col .ang h4 {
+  font-size: 20px;
+  border-bottom: 2px solid #60AE24;
+  display: inline;
+  padding-bottom: 8px;
+}
+html body main .country .container .row .col .table thead tr {
+  background-color: #60AE24;
+  color: white;
+  text-align: center;
+}
+html body main .country .container .row .col .table tbody tr {
+  text-align: center;
+}
+html body main .country .container .row .col .news {
+  font-weight: 700;
+  margin: 30px 0;
+  border-bottom: 1px solid #929090;
+  padding-bottom: 8px;
+}
+html body main .country .container .row .col .news h4 {
+  font-size: 20px;
+  border-bottom: 1px solid #60AE24;
+  display: inline;
+  padding-bottom: 8px;
+}
+html body main .country .container .row .col .new img {
+  width: 95px;
+  height: auto;
+}
+html body main .country .container .row .col .new .word p {
+  font-size: 14px;
+  font-weight: 500;
+  margin-left: 110px;
+}
+html body main .country .container .row .col .new .word .date p {
+  color: #8f8c8c;
+  font-size: 12px;
+}
 
 /*# sourceMappingURL=style.css.map */

@@ -23,10 +23,6 @@ html{
                 color: #60AE24;
                 font-size: 40px;
             }
-            // width: 40px;
-            // height: 40px;
-            // background-color: #60AE24;
-            // border-radius: 50%;
         }
 
         
@@ -315,6 +311,81 @@ html{
                             background-color: #60AE24;
 
                         }
+                    }
+                }
+            }
+
+            .country{
+                .container{
+                    .row{
+                        .col{
+                            .ang{
+                                font-weight: 700;
+                                margin: 30px 0;
+                                border-bottom: 1px solid rgb(146, 144, 144);
+                                padding-bottom: 8px;
+                                h4{
+                                    font-size: 20px;
+                                    border-bottom: 2px solid #60AE24;
+                                    display: inline;
+                                    padding-bottom: 8px;
+                                }
+                            }
+
+                            .table{
+                                thead{
+                                    tr{
+                                        background-color: #60AE24;
+                                        color: white;
+                                        text-align: center;
+                                    }
+                                }
+                                tbody{
+                                    tr{
+                                        text-align: center;
+                                        
+                                    }
+                                }
+                            }
+                        }
+
+                        .col{
+                            .news{
+                                font-weight: 700;
+                                margin: 30px 0;
+                                border-bottom: 1px solid rgb(146, 144, 144);
+                                padding-bottom: 8px;
+                                h4{
+                                    font-size: 20px;
+                                    border-bottom: 1px solid #60AE24;
+                                    display: inline;
+                                    padding-bottom: 8px;
+                                }
+                            }
+
+                            .new{
+                                img{
+                                    width: 95px;
+                                    height: auto;
+                                }
+
+                                .word{
+                                    p{
+                                        font-size: 14px;
+                                        font-weight: 500;
+                                        margin-left: 110px;
+                                    }
+
+                                    .date{
+                                        p{
+                                            color: rgb(143, 140, 140);
+                                            font-size: 12px;
+                                        }
+                                    }
+                                }
+                            }
+                        }
+
                     }
                 }
             }
