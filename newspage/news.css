@@ -1,0 +1,41 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #E9E9E9;
+}
+
+.firstnews {
+  margin: 10px;
+  background-color: #fff;
+  max-width: 300px;
+}
+
+.newslink {
+  font-size: 30px;
+  margin: 10px;
+  text-transform: capitalize;
+  padding-bottom: 10px;
+}
+.newslink h4 {
+  border-bottom: 2px solid gray;
+  max-width: 150px;
+}
+
+.newslink:hover {
+  text-decoration: none;
+}
+
+.onefact {
+  border-bottom: 1px solid gray;
+  padding-bottom: 5px;
+}
+.onefact p {
+  color: orange;
+  margin-right: 5;
+}
+
+/*# sourceMappingURL=news.css.map */
