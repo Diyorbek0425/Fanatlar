@@ -13,6 +13,18 @@ html{
     body {
         background-color: #E9E9E9;
 
+        .fixed{
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+            z-index: 5;
+
+            .fa-chevron-circle-up{
+                color: #60AE24;
+                font-size: 40px;
+            }
+        }
+
         
         header{
             position: sticky;
@@ -101,16 +113,11 @@ html{
                         height: 50px;
                         position: relative;
                         margin-left: 20px;
+
+                        
                         .dropdown{
                             display: flex;
-                            &:checked{
-                                border: none;
-                                outline: none;
-                            }
-                            &:focus{
-                                border: none;
-                                outline: none;
-                            }
+                            
                             .btn{
                                 background-color: #60AE24;
                                 border: none;
@@ -119,6 +126,12 @@ html{
                                 height: 50px;
                                 display: flex;
                                 align-items: center;
+                                font-size: 18px;
+
+                                &:hover{
+                                    background-color: white;
+                                    color: #60AE24;
+                                }
                             }
                         }
     
@@ -232,6 +245,147 @@ html{
     
                             
                         }
+                    }
+                }
+            }
+
+            .secondNav{
+                width: 100%;
+                height: 50px;
+                display: flex;
+                flex-direction: row;
+                justify-content: center;
+                align-items: center;
+                .musobaqalar{
+                    display: flex;
+                    flex-direction: row;
+                    justify-content: center;
+                    align-items: center;
+                    height: 100%;
+                    width: 91%;
+                    background: white;
+                    color: #60AE24;
+                    position: relative;
+
+                    &::before{
+                        content: "";
+                        position: absolute;
+                        top: 0;
+                        left: -5px;
+                        width: 25px;
+                        height: 100%;
+                        background-color: #E9E9E9;
+                        transform: skewX(-15deg);
+                    }
+                    &::after{
+                        content: "";
+                        position: absolute;
+                        top: 0;
+                        right: -18px;
+                        width: 25px;
+                        height: 100%;
+                        background-color: #E9E9E9;
+                        transform: skewX(-15deg);
+                    }
+
+                    div{
+                        font-size: 20px;
+                        font-weight: 700;
+                        margin-right: 105px;
+
+                    }
+                    a{
+                        // display: flex;
+                        height: 100%;
+                        color: #60AE24;
+                        text-decoration: none;
+                        font-size: 18px;
+                        font-weight: 500;
+                        text-align: center;
+                        padding: 0 20px;
+                        display: flex;
+                        align-items: center;
+
+                        &:hover{
+                            color: white;
+                            background-color: #60AE24;
+
+                        }
+                    }
+                }
+            }
+
+            .country{
+                .container{
+                    .row{
+                        .col{
+                            .ang{
+                                font-weight: 700;
+                                margin: 30px 0;
+                                border-bottom: 1px solid rgb(146, 144, 144);
+                                padding-bottom: 8px;
+                                h4{
+                                    font-size: 20px;
+                                    border-bottom: 2px solid #60AE24;
+                                    display: inline;
+                                    padding-bottom: 8px;
+                                }
+                            }
+
+                            .table{
+                                thead{
+                                    tr{
+                                        background-color: #60AE24;
+                                        color: white;
+                                        text-align: center;
+                                    }
+                                }
+                                tbody{
+                                    tr{
+                                        text-align: center;
+                                        
+                                    }
+                                }
+                            }
+                        }
+
+                        .col{
+                            .news{
+                                font-weight: 700;
+                                margin: 30px 0;
+                                border-bottom: 1px solid rgb(146, 144, 144);
+                                padding-bottom: 8px;
+                                h4{
+                                    font-size: 20px;
+                                    border-bottom: 1px solid #60AE24;
+                                    display: inline;
+                                    padding-bottom: 8px;
+                                }
+                            }
+
+                            .new{
+                                img{
+                                    width: 95px;
+                                    height: auto;
+                                }
+
+                                .word{
+                                    p{
+                                        font-size: 14px;
+                                        font-weight: 500;
+                                        margin-left: 110px;
+                                    }
+
+                                    .date{
+                                        p{
+                                            color: rgb(143, 140, 140);
+                                            font-size: 12px;
+                                        }
+                                    }
+                                }
+                            }
+                        }
+
                     }
                 }
             }

@@ -12,6 +12,16 @@ html {
 html body {
   background-color: #E9E9E9;
 }
+html body .fixed {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  z-index: 5;
+}
+html body .fixed .fa-chevron-circle-up {
+  color: #60AE24;
+  font-size: 40px;
+}
 html body header {
   position: sticky;
   top: 0;
@@ -94,14 +104,6 @@ html body main .navbar .wrap .dropdowns {
 html body main .navbar .wrap .dropdowns .dropdown {
   display: flex;
 }
-html body main .navbar .wrap .dropdowns .dropdown:checked {
-  border: none;
-  outline: none;
-}
-html body main .navbar .wrap .dropdowns .dropdown:focus {
-  border: none;
-  outline: none;
-}
 html body main .navbar .wrap .dropdowns .dropdown .btn {
   background-color: #60AE24;
   border: none;
@@ -110,6 +112,11 @@ html body main .navbar .wrap .dropdowns .dropdown .btn {
   height: 50px;
   display: flex;
   align-items: center;
+  font-size: 18px;
+}
+html body main .navbar .wrap .dropdowns .dropdown .btn:hover {
+  background-color: white;
+  color: #60AE24;
 }
 html body main .navbar .wrap .dropdowns::before {
   content: "";
@@ -205,6 +212,110 @@ html body main .navbar .wrap form input {
 html body main .navbar .wrap form input:focus {
   border: none;
   outline: none;
+}
+html body main .secondNav {
+  width: 100%;
+  height: 50px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+html body main .secondNav .musobaqalar {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  width: 91%;
+  background: white;
+  color: #60AE24;
+  position: relative;
+}
+html body main .secondNav .musobaqalar::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: -5px;
+  width: 25px;
+  height: 100%;
+  background-color: #E9E9E9;
+  transform: skewX(-15deg);
+}
+html body main .secondNav .musobaqalar::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: -18px;
+  width: 25px;
+  height: 100%;
+  background-color: #E9E9E9;
+  transform: skewX(-15deg);
+}
+html body main .secondNav .musobaqalar div {
+  font-size: 20px;
+  font-weight: 700;
+  margin-right: 105px;
+}
+html body main .secondNav .musobaqalar a {
+  height: 100%;
+  color: #60AE24;
+  text-decoration: none;
+  font-size: 18px;
+  font-weight: 500;
+  text-align: center;
+  padding: 0 20px;
+  display: flex;
+  align-items: center;
+}
+html body main .secondNav .musobaqalar a:hover {
+  color: white;
+  background-color: #60AE24;
+}
+html body main .country .container .row .col .ang {
+  font-weight: 700;
+  margin: 30px 0;
+  border-bottom: 1px solid #929090;
+  padding-bottom: 8px;
+}
+html body main .country .container .row .col .ang h4 {
+  font-size: 20px;
+  border-bottom: 2px solid #60AE24;
+  display: inline;
+  padding-bottom: 8px;
+}
+html body main .country .container .row .col .table thead tr {
+  background-color: #60AE24;
+  color: white;
+  text-align: center;
+}
+html body main .country .container .row .col .table tbody tr {
+  text-align: center;
+}
+html body main .country .container .row .col .news {
+  font-weight: 700;
+  margin: 30px 0;
+  border-bottom: 1px solid #929090;
+  padding-bottom: 8px;
+}
+html body main .country .container .row .col .news h4 {
+  font-size: 20px;
+  border-bottom: 1px solid #60AE24;
+  display: inline;
+  padding-bottom: 8px;
+}
+html body main .country .container .row .col .new img {
+  width: 95px;
+  height: auto;
+}
+html body main .country .container .row .col .new .word p {
+  font-size: 14px;
+  font-weight: 500;
+  margin-left: 110px;
+}
+html body main .country .container .row .col .new .word .date p {
+  color: #8f8c8c;
+  font-size: 12px;
 }
 
 /*# sourceMappingURL=style.css.map */
