@@ -1,12 +1,15 @@
 function selectTeam() {
     var chempionat = document.getElementById('chempionat').value;
-    if (chempionat === "Premier") {
-        document.getElementById('teams2').style.display = "block"
-        document.getElementById('teamshead').style.display = "none"
+    var teamhead = document.getElementById('teamshead');
+    var teams2 = document.getElementById('temas2');
+
+    if (chempionat == "1") {
+        teamhead.style.display = "none";
+        teams2.style.display = "table"
 
     } else {
         alert('oxwamadi')
-        document.getElementById('teams2').style.display = "none"
-        document.getElementById('teamshead').style.display = "block"
+
     }
+
 }

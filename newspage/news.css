@@ -8,10 +8,160 @@ body {
   background-color: #E9E9E9;
 }
 
-.firstnews {
+.firstnav {
+  display: flex;
+  height: 70px;
+  width: 100%;
+}
+.firstnav .navbar-logo {
+  display: flex;
+  font-weight: 700;
+  align-items: center;
+  margin-left: 10px;
+}
+.firstnav .navbar-logo a {
+  font-size: 25px;
+  background-color: #007BFF;
+  border-radius: 10px;
+  padding: 5px 0px 5px 8px;
+  color: #fff;
+}
+.firstnav .navbar-logo a span {
+  border-radius: 10px;
+  background-color: #fff;
+  color: #007BFF;
+  padding: 8px 10px 8px 0px;
+  width: 100%;
+  margin: 0;
+}
+.firstnav .navbar-logo a:hover {
+  text-decoration: none;
+}
+
+.links {
+  margin-left: auto;
+  display: flex;
+}
+.links ul {
+  display: flex;
+  padding: 10px;
+  margin: 5px 0;
+  background-color: #007BFF;
+}
+.links ul li {
+  list-style-type: none;
+  margin-left: 10px;
+}
+.links ul li a {
+  display: flex;
+  font-size: 23px;
+  color: #FFF !important;
+}
+.links ul li a:hover {
+  text-decoration: none;
+}
+.links .signup {
+  display: flex;
+  font-size: 23px;
+  margin: 5px 0;
+  padding: 7px;
+  background-color: orange;
+}
+
+.links ul::before {
+  content: "";
+  position: absolute;
+  top: 0.8%;
+  left: 52.02%;
+  /* width: 50px; */
+  /* height: 50px; */
+  border-bottom: 30px solid #007BFF;
+  border-left: 30px solid transparent;
+  border-right: 30px solid #007BFF;
+  border-top: 30px solid transparent;
+  background-color: transparent;
+}
+
+.social-links .facebooklink {
+  width: 36px;
+  height: 36px;
+  display: block;
+}
+.social-links .facebooklink a {
+  display: block;
+  width: 100%;
+  cursor: pointer;
+}
+
+.secondNav {
+  width: 100%;
+  height: 50px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+.secondNav .musobaqalar {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  width: 91%;
+  background: white;
+  color: #007BFF;
+  position: relative;
+}
+.secondNav .musobaqalar::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: -5px;
+  width: 25px;
+  height: 100%;
+  background-color: #E9E9E9;
+  transform: skewX(-15deg);
+}
+.secondNav .musobaqalar::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: -18px;
+  width: 25px;
+  height: 100%;
+  background-color: #E9E9E9;
+  transform: skewX(-15deg);
+}
+.secondNav .musobaqalar div {
+  font-size: 20px;
+  font-weight: 700;
+  margin-right: 105px;
+}
+.secondNav .musobaqalar a {
+  height: 100%;
+  color: #007BFF;
+  text-decoration: none;
+  font-size: 18px;
+  font-weight: 500;
+  text-align: center;
+  padding: 0 20px;
+  display: flex;
+  align-items: center;
+}
+.secondNav .musobaqalar a:hover {
+  color: white;
+  background-color: #007BFF;
+}
+
+.firstcolumn {
   margin: 10px;
   background-color: #fff;
-  max-width: 300px;
+  display: table-cell;
+  width: 262px;
+  max-width: 262px;
+  min-width: 262px;
+  padding-right: 12px;
+  vertical-align: top;
 }
 
 .newslink {
@@ -41,11 +191,18 @@ body {
   margin-right: 5;
 }
 
-.centeralnews {
+.secondcolumn {
   margin-top: 10px;
   background-color: #fff;
+  min-width: 370px;
+  max-width: 480px;
+  display: table-cell;
+  width: auto;
+  padding-right: 12px;
+  vertical-align: top;
 }
-.centeralnews .generalnews h4 {
+
+.generalnews h4 {
   display: flex;
   align-items: center;
   align-content: center;
@@ -55,24 +212,19 @@ body {
   border-bottom: 2px solid gray;
   padding-bottom: 5px;
 }
-.centeralnews .generalnews:hover {
+.generalnews:hover {
   text-decoration: none;
 }
 
 .new1 {
   background-color: #fff;
-  max-width: 90%;
-  left: 5%;
-  position: absolute;
   display: block;
   z-index: 12;
-  top: 33%;
   padding-bottom: 15px;
 }
 .new1 a {
   display: flex;
   justify-content: flex-start;
-  padding: 10px 60px 10px 60px;
   font-size: 25px;
   color: black;
   transition: 0.4s ease;
@@ -150,9 +302,22 @@ body {
   text-decoration: none;
 }
 
-.teams {
+.thirdcolumn {
   background-color: #fff;
-  margin: 5px;
+  margin: 8px;
+  width: 348px;
+  max-width: 348px;
+  min-width: 348px;
+  display: table-cell;
+  vertical-align: top;
+}
+
+.fouthcolumn {
+  width: 240px;
+  min-width: 240px;
+  max-width: 240px;
+  display: table-cell;
+  vertical-align: top;
 }
 
 /*# sourceMappingURL=news.css.map */
