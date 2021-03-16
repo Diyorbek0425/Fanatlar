@@ -54,6 +54,8 @@ body {
                 display: flex;
                 font-size: 23px;
                 color: #FFF !important;
+                border-right: 1px solid gray;
+                padding-right: 5px;
             }
             & a:hover {
                 text-decoration: none;
@@ -63,17 +65,49 @@ body {
     .signup {
         display: flex;
         font-size: 23px;
-        margin: 5px 0;
+        margin: 5px 50px 5px 50px;
         padding: 7px;
         background-color: orange;
+        color: #FFF;
     }
+    .signup:hover {
+        text-decoration: none;
+    }
+}
+
+.signup::before {
+    content: "";
+    position: absolute;
+    top: 0.8%;
+    left: 72.2%;
+    /* width: 50px; */
+    /* height: 50px; */
+    border-bottom: 30px solid orange;
+    border-left: 30px solid #007bff;
+    border-right: 30px solid orange;
+    border-top: 30px solid #007bff;
+    background-color: transparent;
+}
+
+.signup::after {
+    content: "";
+    position: absolute;
+    top: 0.8%;
+    left: 81.6%;
+    /* width: 50px; */
+    /* height: 50px; */
+    border-bottom: 30px solid transparent;
+    border-left: 30px solid orange;
+    border-right: 30px solid transparent;
+    border-top: 30px solid orange;
+    background-color: transparent;
 }
 
 .links ul::before {
     content: "";
     position: absolute;
     top: 0.8%;
-    left: 52.02%;
+    left: 28.2%;
     /* width: 50px; */
     /* height: 50px; */
     border-bottom: 30px solid #007BFF;
@@ -84,14 +118,42 @@ body {
 }
 
 .social-links {
+    // padding-top: 20px;
+    display: flex;
+    align-items: center;
+    background-color: transparent;
+    a {
+        margin: 5px;
+        border-radius: 50%;
+        width: 30px;
+        height: 30px;
+    }
     .facebooklink {
-        width: 36px;
-        height: 36px;
-        display: block;
         a {
-            display: block;
-            width: 100%;
-            cursor: pointer;
+            background-color: #4867AA;
+            padding: 10px 15px 10px 15px;
+            color: #FFF;
+        }
+    }
+    .youtubelink {
+        a {
+            background-color: #FC0000;
+            color: #FFF;
+            padding: 10px 11px 10px 11px;
+        }
+    }
+    .twitterlink {
+        a {
+            background-color: #50ABF1;
+            color: #FFF;
+            padding: 10px 11px 10px 11px;
+        }
+    }
+    .instagramlink {
+        a {
+            background-color: #F14E46;
+            color: #FFF;
+            padding: 10px 13px 10px 13px;
         }
     }
 }
@@ -175,7 +237,7 @@ body {
     text-transform: capitalize;
     padding-bottom: 10px;
     h4 {
-        border-bottom: 2px solid gray;
+        border-bottom: 2px solid orange;
         max-width: 300px;
         display: flex;
         justify-content: center;
@@ -216,7 +278,7 @@ body {
         justify-content: center;
         padding-top: 45px;
         width: 100%;
-        border-bottom: 2px solid gray;
+        border-bottom: 2px solid orange;
         padding-bottom: 5px;
     }
     &:hover {
@@ -306,9 +368,9 @@ body {
         align-items: center;
         align-content: center;
         justify-content: center;
-        padding-top: 50px;
+        padding-top: 45px;
         width: 100%;
-        border-bottom: 2px solid gray;
+        border-bottom: 2px solid orange;
         padding-bottom: 5px;
     }
     &:hover {
@@ -325,6 +387,29 @@ body {
     min-width: 348px;
     display: table-cell;
     vertical-align: top;
+    a h4 {
+        border-bottom: 2px solid orange;
+    }
+}
+
+.matches {
+    ul {
+        justify-content: center;
+        display: inline-block;
+        border-bottom: 0;
+        border-bottom: 1px solid #cacaca;
+        margin: 10px auto;
+        overflow: inherit;
+        height: 25px;
+        li {
+            list-style-type: none;
+            padding-right: 10px;
+            a {
+                color: #000;
+                font-weight: 500;
+            }
+        }
+    }
 }
 
 // ==================================================Fouthcolumn===========================================
