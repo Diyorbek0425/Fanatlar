@@ -11,8 +11,8 @@ body {
 // =====================================================Navbar=============================================
 .firstnav {
     display: flex;
-    height: 70px;
-    width: 100%;
+    height: auto;
+    width: auto;
     .navbar-logo {
         display: flex;
         font-weight: 700;
@@ -40,8 +40,8 @@ body {
 }
 
 .links {
-    margin-left: auto;
     display: flex;
+    justify-content: end;
     ul {
         display: flex;
         padding: 10px;
@@ -410,6 +410,31 @@ body {
             }
         }
     }
+}
+
+.todaymateches {
+    a {
+        color: #000;
+        font-weight: 500;
+    }
+    p {
+        color: orange;
+    }
+}
+
+.teams:hover {
+    background-color: rgba(19, 223, 19, 0.301);
+}
+
+.umumiy {
+    height: auto;
+    width: auto;
+    min-height: 100%;
+    padding-left: 15px;
+    padding-right: 15px;
+    padding-top: 13px;
+    position: relative;
+    margin-bottom: -57px;
 }
 
 // ==================================================Fouthcolumn===========================================

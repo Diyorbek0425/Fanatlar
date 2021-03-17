@@ -10,8 +10,8 @@ body {
 
 .firstnav {
   display: flex;
-  height: 70px;
-  width: 100%;
+  height: auto;
+  width: auto;
 }
 .firstnav .navbar-logo {
   display: flex;
@@ -39,8 +39,8 @@ body {
 }
 
 .links {
-  margin-left: auto;
   display: flex;
+  justify-content: end;
 }
 .links ul {
   display: flex;
@@ -386,6 +386,29 @@ body {
 .matches ul li a {
   color: #000;
   font-weight: 500;
+}
+
+.todaymateches a {
+  color: #000;
+  font-weight: 500;
+}
+.todaymateches p {
+  color: orange;
+}
+
+.teams:hover {
+  background-color: rgba(19, 223, 19, 0.301);
+}
+
+.umumiy {
+  height: auto;
+  width: auto;
+  min-height: 100%;
+  padding-left: 15px;
+  padding-right: 15px;
+  padding-top: 13px;
+  position: relative;
+  margin-bottom: -57px;
 }
 
 .fouthcolumn {
