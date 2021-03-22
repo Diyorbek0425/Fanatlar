@@ -1,15 +1,25 @@
-function selectTeam() {
-    var chempionat = document.getElementById('chempionat').value;
-    var teamhead = document.getElementById('teamshead');
-    var teams2 = document.getElementById('temas2');
+function tableOpenAll() {
+    var allgames = document.getElementById('allgames');
+    var todaymgames = document.getElementById('todaygames');
+    var yesterdaygames = document.getElementById('yesterdaygames');
+    var tomorrowgames = document.getElementById('tomorrowgames');
 
-    if (chempionat == "1") {
-        teamhead.style.display = "none";
-        teams2.style.display = "table"
+    allgames.style.display = 'block';
+    todaymgames.style.displayc = 'block';
+    yesterdaygames.style.display = 'block';
+    tomorrowgames.style.display = 'block'
 
-    } else {
-        alert('oxwamadi')
+}
 
-    }
+function tableOpenToday() {
+    var allgames = document.getElementById('allgames');
+    var todaymgames = document.getElementById('todaygames');
+    var yesterdaygames = document.getElementById('yesterdaygames');
+    var tomorrowgames = document.getElementById('tomorrowgames');
+
+    allgames.style.display = 'none';
+    todaymgames.style.displayc = 'block';
+    yesterdaygames.style.display = 'none';
+    tomorrowgames.style.display = 'none'
 
 }
