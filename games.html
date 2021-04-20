@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- --------------------------Fonts link--------------------------------------------------- -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css" integrity="sha512-HK5fgLBL+xu6dm/Ii3z4xhlSUyZgTT9tuc/hSrtw6uzJOvgRr2a9jyxxT1ely+B+xFAmJKVSTbpM/CuL7qxO8w==" crossorigin="anonymous" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/js/all.min.js" integrity="sha512-UwcC/iaz5ziHX7V6LjSKaXgCuRRqbTp1QHpbOJ4l1nw2/boCfZ2KlFIqBUA/uRVF0onbREnY9do8rM/uT/ilqw==" crossorigin="anonymous"></script>
+    <!-- ------------------Bootstrap css links------------------- -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css" integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
+
+    <!-- ---------------------Bootstrap js links--------------------------- -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-Piv4xVNRyMGpqkS2by6br4gNJ7DXjqk09RmUpJ8jgGtD7zP9yug3goQfGII0yAns" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+    <!-- ---------------------------My code links-------------------------------- -->
+    <link rel="stylesheet" href="/hpage.css">
+    <script src="/hpage.js"></script>
+    <!-- --------------------Icon to tittle--------------------------------- -->
+    <link rel="icon" href="./img/fiocn.png">
+    <title>Musobaqalar</title>
+</head>
+
+<body>
+    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+              </button>
+            </div>
+            <div class="modal-body">
+                <div class="modallogin" id="modallogin">
+                    <div class="loghead text-light">
+                       <div class="modalloguserimg justify-content-center mb-1 pt-4" id="userimg">
+                        <i class="far fa-user fa-4x "></i>
+                    </div>
+                       <div class="modallogaddimg  justify-content-center mb-1" id="plusimg">
+                        <i class="fas fa-plus-circle fa-4x"></i>
+                    </div>
+                        <p>Xush kelibsiz</p>
+                        <p id="aboutlog">Ro'yxatdan o'tgan E-mailingizni yozing</p>
+                        <div class="logforma ">
+                            <div class="forma d-flex justify-content-center align-content-center">
+                        <form action="" >
+                            <br><input type="text" placeholder="Ismingiz:" required class="modallogname " id="modalname" >
+                            <br><input type="text" placeholder="Telefon raqamigiz:" required class=" modallognum " id="modalnum" >
+                            <br><input type="email" placeholder="E-mail:" required class="d-flex modallogemail">
+                            <br><input type="password" placeholder="Parol:"  required class="d-flex modallogpass" >
+                            <br><label for="logradio" class="modallogcheck">
+                        <input type="checkbox" value="Meni eslab qolish" id="logradio" class="mt-1">Meni eslab qolish</label>
+                        <br><div class="sendform"><input type="submit"  id="formsend" value="Yuborish" class="sendform"></div>
+                        <br><div id="signabout"><span class="mt-2 m-auto pb-2 ">Avval ro'yxatdan o'tmaganmisiz? <i class="text-info " onclick="opensignin()" id="signin">Ro'yxatdan o'tish</i></span>
+                        </form>
+                        </div>
+                        </div>
+                    </div>
+                    </div>
+                    </div>
+          </div>
+        </div>
+      </div>
+   </div>
+    <div class="container-fluid umumiy">
+        <div class="row ">
+            <div class="conatiner-fluid firstnav">
+                <div class="navbar-logo">
+                    <a href="fanatlar.uz">FANATLAR<span>.UZ</span></a>
+                </div>
+                <div class="links">
+                    <ul>
+                        <li>
+                            <a href="#" class="">Bosh sahifa</a>
+                        </li>
+                        <li>
+                            <a href="#">Qo'llanmalar</a>
+                        </li>
+                        <li>
+                            <a href="#">Maxsus loyihalar</a>
+                        </li>
+                        <li>
+                            <a href="#">Chat</a>
+                        </li>
+                    </ul>
+                    <a href="#" class="signup" data-toggle="modal" data-target="#exampleModal">Kirish</a>
+                </div>
+                <div class="social-links">
+                    <div class="facebooklink">
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                    </div>
+                    <div class="youtubelink">
+                        <a href="#"><i class="fab fa-youtube"></i></a>
+                    </div>
+                    <div class="twitterlink">
+                        <a href=""><i class="fab fa-twitter"></i></a>
+                    </div>
+                    <div class="instagramlink">
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                    </div>
+                </div>
+            </div>
+            <section class="secondNav">
+                <div class="musobaqalar">
+                    <div>Musobaqalar</div>
+                    <a href="./uzb.html">O'zbekiston </a>
+
+                    <a href="./angliya.html">Angliya </a>
+                    <a href="./italiya.html">Italiya </a>
+                    <a href="./germaniya.html">Germaniya </a>
+                    <a href="./fransiya.html">Fransiya </a>
+                    <a href="./ispaniya.html">Ispaniya </a>
+                    <a href="./uefa.html">UEFA </a>
+                    <a href="./fifa.html">FIFA </a>
+                </div>
+            </section>
+            <section id="head">
+                <div class="container-fluid general">
+                    <div class="row">
+                        <div class="firstcolumng">
+                            <a href="" class="newslink">
+                                <h4><span>Yangiliklar</span></h4>
+                            </a>
+                            <div class="news d-flex">
+                                <p>16:35</p>
+                                <a href="#"> ⚡ Официально: Олич – новый главный тренер ЦСКА <i class="far fa-comment ml-2 text-dark"></i><span> 2</span></a>
+                            </div>
+                            <div class="clonenews d-flex">
+                                <p>16:35</p>
+                                <a href="#"> ⚡ Estadio Deportivo: «Севилья» попытается купить Азмуна у «Зенита» этим летом <i class="far fa-comment ml-2 text-dark"></i><span> 2</span></a>
+                            </div>
+                            <div class="clonenews d-flex">
+                                <p>16:35</p>
+                                <a href="#"> ⚡ Бородюк – новый главный тренер «Торпедо»<a href=""><i class="far fa-comment"></i></a></a>
+                            </div>
+                            <div class="clonenews d-flex">
+                                <p>16:35</p>
+                                <a href="#"> ⚡ Бородюк – новый главный тренер «Торпедо»<a href=""><i class="far fa-comment"></i></a></a>
+                            </div>
+                            <div class="clonenews d-flex">
+                                <p>16:35</p>
+                                <a href="#"> ⚡ Бородюк – новый главный тренер «Торпедо»<a href=""><i class="far fa-comment"></i></a></a>
+                            </div>
+                            <div class="clonenews d-flex">
+                                <p>16:35</p>
+                                <a href="#"> ⚡ Бородюк – новый главный тренер «Торпедо»<a href=""><i class="far fa-comment"></i></a></a>
+                            </div>
+                            <div class="clonenews d-flex">
+                                <p>16:35</p>
+                                <a href="#"> ⚡ Бородюк – новый главный тренер «Торпедо»<a href=""><i class="far fa-comment"></i></a></a>
+                            </div>
+                            <div class="clonenews d-flex">
+                                <p>16:35</p>
+                                <a href="#"> ⚡ Бородюк – новый главный тренер «Торпедо»<a href=""><i class="far fa-comment"></i></a></a>
+                            </div>
+                        </div>
+
+                        <div class="middlecolumng">
+                            <div class="statics">
+                            <div class="countries">
+                                <select name="countries" id="countries" >
+                                    <option value="">Uzbbekistan</option>
+                                    <option value="">Angliya</option>
+                                    <option value="">Fransiya</option>
+                                    <option value="">Germaniya</option>
+                                    <option value="">Rossiya</option>
+                                </select>
+                            </div>
+                            <div class="ligalar">
+                                <select name="ligalar" id="ligalar">
+                                    <option value="">Premier-Liga</option>
+                                    <option value="">Yoki yana bowqa liga</option>
+                                    <option value="1"></option>
+                                </select>
+                            </div>
+                            </div>
+                            <div class="teamtabble"></div>
+
+
+                        </div>
+
+                        <div class=" fourthcolumng">
+                            <a href="#" class="generalnews">
+                                <h4>My Club</h4>
+                            </a>
+                            <div class="selectoption">
+                                <ul>
+                                    <li>
+                                        <a href="#">Club</a>
+                                        <a href="#">Team</a>
+                                    </li>
+                                </ul>
+                                <div class="commands">
+                                    <select name="turnir" id="turnir" onclick="selectOption()">
+                                        <option id="turnir0" value="0">Turnirni tanlang</option>
+                                        <option id="turnir1" value="1">Rossiya.Premier-liga</option>
+                                        <option id="turnir2" value="2">Angliya.Premier-Liga</option>
+                                        <option id="turnir3" value="3">Ispaniya</option>
+                                        <option id="turnir4" value="4">Fransiya</option>
+                                    </select>
+                                    <select name="command" id="command" class="mt-2">
+                                        <option id="command0" value="00">Klubingiz</option>
+                                        <option id="command1" value="01">Klub 1</option>
+                                        <option id="command2" value="02">Klub 2</option>
+                                        <option id="command3" value="02">Klub 2</option>
+                                        <option id="command4" value="02">Klub 2</option>
+                                    </select>
+                                    <div class="tableOchko">
+                                        <p class="text-dark font-weight-bold pb-1">4-mart , Juma</p>
+                                        <div class="teams d-flex ">
+                                            <div class="starttime ">
+                                                <p>15:23</p>
+                                            </div>
+                                            <div class="names d-block pl-2 ">
+                                                <a href="# " class="d-flex "><img width="20% " src="./img/clublogo.png "><span id="team1"> Yuventus</span></a>
+                                                <a href="# " class="d-flex "><img src="./img/clublogo.png " width="20% "><span id="team2"> Yuventus</span></a>
+                                            </div>
+                                            <div class="scores  m-auto">
+                                                <p id="score1">1</p>
+                                                <p id="score2">2</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- <div class="uptotop">
+                            <div class="obw">
+                                <a href="#top"><i class="fas fa-angle-up"></i></a>
+
+                            </div>
+                        </div> -->
+            </section>
+            </div>
+            <footer>
+                <div class="container-fluid footer d-flex align-items-center ">
+                    <div class="mobilever d-flex ml-5 ">
+                        <a href="#"><i class="fas fa-mobile-alt fa-2x"></i></a>
+                        <p class="pl-1 pt-1">Mob.version</p>
+                    </div>
+                    <div class="young d-flex ml-2">
+                        <i class="fas fa-exclamation-circle fa-2x"></i>
+                        <p class="pt-1 pl-1">Yosh chegarasi <span>18+</span></p>
+                    </div>
+                    <div class="wereadsoc d-flex ml-3">
+                        <p>Bizni o'qing:</p>
+                        <div class="social-links">
+                            <div class="facebooklink">
+                                <a href="#"><i class="fab fa-facebook-f"></i></a>
+                            </div>
+
+                            <div class="twitterlink">
+                                <a href=""><i class="fab fa-twitter"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="aboutfooter d-flex mt-1 ">
+                        <ul class="">
+                            <li>
+                                <a href="#">Arxiv</a>
+                                <a href="#">Biz haqimizda</a>
+                                <a href="#">Reklama</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </footer>
+            </div>

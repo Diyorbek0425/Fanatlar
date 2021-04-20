@@ -13,6 +13,127 @@ body {
   background-color: #E9E9E9;
 }
 
+:focus {
+  outline: none;
+}
+
+.generalnews h4 {
+  display: flex;
+  align-items: center;
+  align-content: center;
+  justify-content: center;
+  padding-top: 40px;
+  width: 100%;
+  border-bottom: 2px solid orange;
+  color: #000;
+  padding-bottom: 5px;
+}
+.generalnews:hover {
+  text-decoration: none;
+}
+
+.modallogin {
+  width: 100% !important;
+  height: 700px;
+  background-color: rgba(0, 0, 0, 0.658);
+  display: block;
+  position: absolute;
+  min-width: 1260px;
+  max-width: 1382px;
+  margin: auto !important;
+  z-index: -10;
+}
+.modallogin .modallogname {
+  border-top: none;
+  border-right: none;
+  border-left: none;
+  border-bottom: 0.4px solid gray;
+  display: none;
+  justify-content: center;
+  margin: auto;
+  color: #FFF;
+  background-color: transparent;
+}
+.modallogin .modallognum {
+  border-top: none;
+  border-right: none;
+  border-left: none;
+  border-bottom: 0.4px solid gray;
+  display: none;
+  justify-content: center;
+  margin: auto;
+  color: #FFF;
+  background-color: transparent;
+}
+.modallogin .modallogemail {
+  border-top: none;
+  border-right: none;
+  border-left: none;
+  border-bottom: 0.4px solid gray;
+  display: flex;
+  justify-content: center;
+  margin: auto;
+  color: #FFF;
+  background-color: transparent;
+}
+.modallogin .modallogpass {
+  border-top: none;
+  border-right: none;
+  border-left: none;
+  border-bottom: 0.4px solid gray;
+  display: flex;
+  color: #FFF;
+  justify-content: center;
+  margin: auto;
+  background-color: transparent;
+}
+.modallogin .modallogcheck {
+  display: flex;
+  justify-content: center;
+  margin: auto;
+  background-color: transparent;
+}
+.modallogin ::-webkit-input-placeholder {
+  color: #FFF;
+  font-size: 20px;
+}
+.modallogin .loghead {
+  padding: 20px 20px;
+  margin: auto;
+  background-color: #5644C1 !important;
+  margin-top: 100px;
+  width: 40%;
+  height: 80%;
+  background-color: #ffffff;
+}
+.modallogin .loghead p {
+  text-align: center;
+  color: #fff;
+  font-size: 20px;
+  font-family: sans-serif;
+  font-weight: 500;
+}
+.modallogin .loghead .modalloguserimg {
+  display: flex;
+}
+.modallogin .loghead .modallogaddimg {
+  display: none;
+}
+.modallogin .loghead .sendform {
+  padding: 5px 8px;
+  display: flex;
+  justify-content: center;
+  background-color: #FFF;
+  border: none;
+  color: #e2520e;
+  border-radius: 10px;
+  max-width: 100px;
+  margin: auto;
+}
+.modallogin .loghead span a:hover {
+  color: #FFF !important;
+}
+
 .umumiy {
   height: auto;
   width: 100%;
@@ -78,6 +199,7 @@ body {
   color: #FFF !important;
   border-right: 1px solid gray;
   padding-right: 5px;
+  font-weight: 600;
 }
 .links ul li a:hover {
   text-decoration: none;
@@ -97,8 +219,11 @@ body {
 .signup::before {
   content: "";
   position: absolute;
-  top: 1.09%;
+  top: 1.9%;
   left: 72.5%;
+  display: block;
+  margin: 0;
+  padding: 0;
   width: 50px;
   height: 50px;
   border-bottom: 27px solid orange;
@@ -111,7 +236,7 @@ body {
 .signup::after {
   content: "";
   position: absolute;
-  top: 1.09%;
+  top: 1.9%;
   left: 81.6%;
   /* width: 50px; */
   /* height: 50px; */
@@ -149,6 +274,9 @@ body {
   background-color: #4867AA;
   padding: 10px 15px 10px 15px;
   color: #FFF;
+}
+.social-links .facebooklink:hover a i {
+  transform: rotateX(-180deg);
 }
 .social-links .youtubelink a {
   background-color: #FC0000;
@@ -207,35 +335,17 @@ body {
   color: #60AE24;
   position: relative;
 }
-.secondNav .musobaqalar::before {
-  content: "";
-  width: 30px;
-  height: 100%;
-  background-color: #E9E9E9;
-  transform: skewX(-15deg);
-  margin-left: -20px;
-}
-.secondNav .musobaqalar::after {
-  content: "";
-  position: absolute;
-  top: 0;
-  right: -18px;
-  width: 25px;
-  height: 100%;
-  background-color: #E9E9E9;
-  transform: skewX(-15deg);
-}
 .secondNav .musobaqalar div {
   font-size: 20px;
-  font-weight: 700;
+  font-weight: 500;
   margin-right: 105px;
 }
 .secondNav .musobaqalar a {
   height: 100%;
-  color: #60AE24;
+  color: #000;
   text-decoration: none;
   font-size: 18px;
-  font-weight: 500;
+  font-weight: 400;
   text-align: center;
   padding: 0 20px;
   display: flex;
@@ -245,15 +355,20 @@ body {
   color: white;
   background-color: #60AE24;
 }
+.secondNav .musobaqalar a i {
+  font-weight: 200;
+}
 
 .firstcolumn {
   margin: 8px;
   background-color: #fff;
   display: table-cell;
-  width: 262px;
-  max-width: 262px;
-  min-width: 262px;
+  width: 260x;
+  max-width: 260px;
+  min-width: 260px;
   padding-right: 12px;
+  margin-bottom: 0;
+  padding-bottom: 0;
   vertical-align: top;
 }
 
@@ -272,212 +387,173 @@ body {
   padding-bottom: 5px;
 }
 
+.clonenews {
+  border-bottom: 1px solid gray;
+  padding-bottom: 5px;
+  margin-top: 0px;
+  padding-top: 0;
+}
+.clonenews p {
+  color: orange;
+  margin-right: 5;
+}
+.clonenews a {
+  color: #000;
+}
+
 .newslink:hover {
   text-decoration: none;
 }
 
-.onefact {
+.news {
   border-bottom: 1px solid gray;
   padding-bottom: 5px;
+  padding-left: 5px;
+  margin-top: -45px;
+  padding-top: 0;
 }
-.onefact p {
+.news p {
   color: orange;
   margin-right: 5;
 }
-.onefact a {
+.news a {
   color: #000;
 }
 
-.secondcolumn {
-  margin-top: 8px;
-  background-color: #fff;
-  min-width: 370px;
-  max-width: 480px;
+.middlecolumn {
+  padding-right: 12px;
+  min-width: 728px;
+  max-width: 840px;
   display: table-cell;
-  width: auto;
-  vertical-align: top;
+  margin-top: 8px;
+  background-color: #FFF;
 }
-
-.generalnews h4 {
-  display: flex;
-  align-items: center;
-  align-content: center;
-  justify-content: center;
-  padding-top: 45px;
-  width: 100%;
-  border-bottom: 2px solid orange;
-  color: #000;
-  padding-bottom: 5px;
+.middlecolumn .headnews {
+  font-size: 20pt;
+  margin: 0;
+  padding: 25px 16px 5px;
 }
-.generalnews:hover {
-  text-decoration: none;
+.middlecolumn .sharenews {
+  margin-left: auto;
+  margin-right: auto;
 }
-
-.inimage {
-  background: #000;
-  transition: 0.4s ease;
-  height: auto;
+.middlecolumn .shareiconsvg {
+  margin-left: 50px;
 }
-.inimage a img {
-  transition: opacity 0.4s ease;
-  height: auto;
-}
-
-.new1 {
-  background-color: #fff;
-  display: block;
-  z-index: 12;
-  padding-bottom: 15px;
-}
-.new1 a {
-  display: flex;
-  justify-content: flex-start;
+.middlecolumn .sharetext {
   font-size: 25px;
-  color: black;
-  transition: 0.4s ease;
-  font-weight: 500;
+  margin-top: 20px;
 }
-.new1 p {
-  color: #A9A9A9;
+.middlecolumn .shares {
+  margin-top: 40px;
+  letter-spacing: 10px;
 }
-
-.new1 a:hover {
-  color: #60AE24;
+.middlecolumn .ndate {
+  color: rgba(128, 128, 128, 0.623);
+}
+.middlecolumn .shareinsta {
+  color: #ed4956;
+}
+.middlecolumn .shareface {
+  color: #4867AA;
+}
+.middlecolumn .nabout {
+  margin: 8px;
+}
+.middlecolumn .nabout p {
+  font-size: 20px;
+}
+.middlecolumn .tgkanal {
+  background-color: #00a2ff;
+  color: #FFF;
+  padding: 18px;
+  border-radius: 10px;
+}
+.middlecolumn .tgkanal p {
+  font-size: 22px;
+}
+.middlecolumn .tgkanal a {
   text-decoration: none;
-}
-
-.newsheadimg:hover {
-  opacity: 0.7;
-}
-
-.othernews {
-  padding-top: 10px;
-}
-.othernews a img:hover {
-  opacity: 0.7;
-  transform: scale(1.5, 1.5);
-}
-
-.newstext p {
-  font-size: 15px;
-  font-weight: 400;
-}
-.newstext a {
-  margin-left: 12px;
-}
-
-.europefutbol {
-  color: #A9A9A9;
-}
-
-.europefutbol:hover {
-  color: #A9A9A9;
-}
-
-.firstp {
-  margin: -10px;
-  font-weight: 600 !important;
-}
-
-.firstp:hover {
-  color: #60AE24;
-}
-
-.newsdate {
-  position: absolute;
-  top: 93.3%;
-  left: 43%;
-  font-size: 15px !important;
-  color: #A9A9A9;
-}
-
-.generalnews h4 {
-  display: flex;
-  align-items: center;
-  align-content: center;
-  justify-content: center;
-  padding-top: 45px;
-  width: 100%;
-  border-bottom: 2px solid orange;
-  padding-bottom: 5px;
-}
-.generalnews:hover {
-  text-decoration: none;
+  border-bottom: 1px dashed #FFF;
+  color: #FFF;
+  font-weight: 600;
 }
 
 .thirdcolumn {
-  background-color: #fff;
-  margin: 8px;
-  width: 348px;
-  max-width: 348px;
-  min-width: 348px;
-  display: table-cell;
-  vertical-align: top;
-}
-.thirdcolumn a h4 {
-  border-bottom: 2px solid orange;
-}
-
-.matches ul {
-  justify-content: center;
-  display: inline-block;
-  border-bottom: 0;
-  border-bottom: 1px solid #cacaca;
-  margin: 10px auto;
-  overflow: inherit;
-  height: 25px;
-}
-.matches ul li {
-  list-style-type: none;
-  padding-right: 10px;
-}
-.matches ul li a {
-  color: #000;
-  font-weight: 500;
-}
-.matches .todaymateches a {
-  font-weight: 600;
-  color: #000;
-}
-.matches .todaymateches .starttime p {
-  color: #000;
-}
-.matches .todaymateches .today {
-  color: orange;
-  font-weight: 700;
-}
-.matches .teams:hover {
-  background-color: #60ae2491;
-}
-.matches .scores {
-  opacity: 1;
-}
-.matches .nostart {
-  color: #60AE24 !important;
-  font-weight: 400;
-  border-bottom: 1px solid gray;
-}
-.matches #allgames {
-  display: block;
-}
-.matches #todaygames {
-  display: block;
-}
-.matches #yesterdaygames {
-  display: block;
-}
-.matches #tomorrowgames {
-  display: block;
-}
-
-.fourthcolumn {
   width: 220px;
   margin-top: 8px;
+  margin-left: 8px;
   min-width: 220px;
   max-width: 220px;
+  margin-bottom: 0;
+  padding-bottom: 0;
   display: table-cell;
   vertical-align: top;
   background-color: #fff;
+}
+
+.selectoption ul {
+  display: inline-block;
+  display: flex;
+  border-bottom: 1px solid gray;
+  justify-content: center;
+}
+.selectoption ul li {
+  list-style-type: none;
+}
+.selectoption ul li a {
+  margin: 0 20px;
+  color: #000;
+}
+.selectoption .commands {
+  text-align: center;
+}
+.selectoption .commands select {
+  width: 90%;
+}
+.selectoption .commands select option:hover {
+  background-color: #FFF !important;
+}
+.selectoption .commands .tableOchko {
+  padding: 5px;
+  margin: 5px;
+  background-color: #E9E9E9;
+  margin-top: 10px;
+}
+.selectoption .commands .teams a {
+  color: #000;
+}
+
+.footer {
+  width: 100% !important;
+  height: 60px;
+  background-color: #BDBDBD;
+}
+.footer p {
+  font-weight: 500;
+  font-size: 20px;
+}
+.footer .mobilever a {
+  color: #00a2ff;
+}
+.footer .young svg {
+  color: #60AE24 !important;
+}
+.footer .young span {
+  color: #60AE24;
+}
+.footer .aboutfooter {
+  margin-left: auto;
+  padding-right: 10px;
+  margin-right: -10px;
+}
+.footer .aboutfooter ul li {
+  list-style-type: none !important;
+}
+.footer .aboutfooter ul li a {
+  color: #000;
+  font-size: 20px;
+  padding: 5px;
 }
 
 /*# sourceMappingURL=news.css.map */

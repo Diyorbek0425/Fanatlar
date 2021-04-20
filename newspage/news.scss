@@ -12,7 +12,135 @@ p {
 body {
     background-color: #E9E9E9;
 }
+:focus{
+    outline: none;
+}
+.generalnews {
+    h4 {
+        display: flex;
+        align-items: center;
+        align-content: center;
+        justify-content: center;
+        padding-top: 40px;
+        width: 100%;
+        border-bottom: 2px solid orange;
+        color: #000;
+        padding-bottom: 5px;
+    }
+    &:hover {
+        text-decoration: none;
+    }
+}
+.modallogin{
+    width: 100% !important;
+    height: 700px;
+    background-color: rgba(0, 0, 0, 0.658);
+    display: block;
+    position: absolute;
+    min-width: 1260px;
+    max-width: 1382px;
+    margin: auto !important;
+    z-index: -10;
+    .modallogname{
+        border-top: none;
+        border-right: none;
+        border-left: none;
+        border-bottom: 0.4px solid gray;
+        display: none;
+        justify-content: center;
+        margin: auto;
+        color: #FFF;
+        background-color: transparent;
+    }
+    .modallognum{
+        border-top: none;
+        border-right: none;
+        border-left: none;
+        border-bottom: 0.4px solid gray;
+        display: none;
+        justify-content: center;
+        margin: auto;
+        color: #FFF;
+        background-color: transparent;
+    }
+    .modallogemail{
+        border-top: none;
+        border-right: none;
+        border-left: none;
+        border-bottom: 0.4px solid gray;
+        display: flex;
+        justify-content: center;
+        margin: auto;
+        color: #FFF;
+        background-color: transparent;
+    }
+    .modallogpass{
+        border-top: none;
+        border-right: none;
+        border-left: none;
+        border-bottom: 0.4px solid gray;
+        display: flex;
+        color: #FFF;
+        justify-content: center;
+        margin: auto;
+       
+        background-color: transparent;
+    }
+    .modallogcheck{
+      
+        display: flex;
+        justify-content: center;
+        margin: auto;
+        
+        background-color: transparent;
+    }
+    ::-webkit-input-placeholder{
+        color: #FFF;
+        font-size: 20px;
+    }
+    .loghead{
+        padding: 20px 20px ;
+        // border-radius: 50px;
+        margin: auto;
+        background-color: #5644C1 !important;
+        margin-top: 100px;
+        width: 40%;
+        height: 80%;
+        background-color: #ffffff;
+        
+        p{
+            text-align: center;
+            color: #fff;
+            font-size: 20px;
+            font-family: sans-serif;
+            font-weight: 500;
+        }
+        .modalloguserimg{
+            display: flex;
+        }
+        .modallogaddimg{
+            display: none;
+        }
+        .sendform{
+            padding: 5px 8px;
+            display: flex;
+            justify-content: center;
+            background-color: #FFF;
+            border: none;
+            color: rgb(226, 82, 14);
+            border-radius: 10px;
+            max-width: 100px;
+            margin: auto;
+        }
+        
+        span{
+            a:hover{
+                color: #FFF !important;
+            }
+        }
+    }
 
+}
 .umumiy {
     height: auto;
     width: 100%;
@@ -76,6 +204,7 @@ body {
                 color: #FFF !important;
                 border-right: 1px solid gray;
                 padding-right: 5px;
+                font-weight: 600;
             }
             & a:hover {
                 text-decoration: none;
@@ -98,8 +227,11 @@ body {
 .signup::before {
     content: "";
     position: absolute;
-    top: 1.09%;
+    top: 1.9%;
     left: 72.5%;
+    display: block;
+    margin: 0;
+    padding: 0;
     width: 50px;
     height: 50px;
     border-bottom: 27px solid orange;
@@ -112,7 +244,7 @@ body {
 .signup::after {
     content: "";
     position: absolute;
-    top: 1.09%;
+    top: 1.9%;
     left: 81.6%;
     /* width: 50px; */
     /* height: 50px; */
@@ -126,7 +258,7 @@ body {
 .links::before {
     content: "";
     // position: absolute;
-    // top: 2%;
+    // top: 1.1%;
     // left: 28.6%;
     margin-top: 5px;
     width: 20px;
@@ -154,6 +286,9 @@ body {
             background-color: #4867AA;
             padding: 10px 15px 10px 15px;
             color: #FFF;
+        }
+        &:hover a i {
+            transform: rotateX(-180deg);
         }
     }
     .youtubelink {
@@ -218,39 +353,19 @@ body {
         background: white;
         color: #60AE24;
         position: relative;
-        &::before {
-            content: "";
-            // position: absolute;
-            // top: 0;
-            // left: -20px;
-            width: 30px;
-            height: 100%;
-            background-color: #E9E9E9;
-            transform: skewX(-15deg);
-            margin-left: -20px;
-        }
-        &::after {
-            content: "";
-            position: absolute;
-            top: 0;
-            right: -18px;
-            width: 25px;
-            height: 100%;
-            background-color: #E9E9E9;
-            transform: skewX(-15deg);
-        }
+       
         div {
             font-size: 20px;
-            font-weight: 700;
+            font-weight: 500;
             margin-right: 105px;
         }
         a {
             // display: flex;
             height: 100%;
-            color: #60AE24;
+            color: #000;
             text-decoration: none;
             font-size: 18px;
-            font-weight: 500;
+            font-weight: 400;
             text-align: center;
             padding: 0 20px;
             display: flex;
@@ -259,19 +374,24 @@ body {
                 color: white;
                 background-color: #60AE24;
             }
+            i {
+                font-weight: 200;
+            }
         }
     }
 }
 
-// ======================================================Firts column===================================================
+// ----------------------------------------------First column---------------------------------------------------------
 .firstcolumn {
     margin: 8px;
     background-color: #fff;
     display: table-cell;
-    width: 262px;
-    max-width: 262px;
-    min-width: 262px;
+    width: 260x;
+    max-width: 260px;
+    min-width: 260px;
     padding-right: 12px;
+    margin-bottom: 0;
+    padding-bottom: 0;
     vertical-align: top;
 }
 
@@ -290,13 +410,11 @@ body {
     }
 }
 
-.newslink:hover {
-    text-decoration: none;
-}
-
-.onefact {
+.clonenews {
     border-bottom: 1px solid gray;
     padding-bottom: 5px;
+    margin-top: 0px;
+    padding-top: 0;
     p {
         color: orange;
         margin-right: 5;
@@ -306,214 +424,176 @@ body {
     }
 }
 
-// ============================================================second column=========================================================
-.secondcolumn {
-    margin-top: 8px;
-    background-color: #fff;
-    min-width: 370px;
-    max-width: 480px;
-    display: table-cell;
-    width: auto;
-    // padding-right: 1px;
-    vertical-align: top;
-}
-
-.generalnews {
-    h4 {
-        display: flex;
-        align-items: center;
-        align-content: center;
-        justify-content: center;
-        padding-top: 45px;
-        width: 100%;
-        border-bottom: 2px solid orange;
-        color: #000;
-        padding-bottom: 5px;
-    }
-    &:hover {
-        text-decoration: none;
-    }
-}
-
-.inimage {
-    background: #000;
-    transition: 0.4s ease;
-    height: auto;
-    a img {
-        transition: opacity 0.4s ease;
-        height: auto;
-    }
-}
-
-.new1 {
-    background-color: #fff;
-    display: block;
-    z-index: 12;
-    padding-bottom: 15px;
-    a {
-        display: flex;
-        justify-content: flex-start;
-        font-size: 25px;
-        color: black;
-        transition: 0.4s ease;
-        font-weight: 500;
-        // transition: all 5s ease-in-out;
-    }
-    p {
-        color: #A9A9A9;
-    }
-}
-
-.new1 a:hover {
-    color: #60AE24;
+.newslink:hover {
     text-decoration: none;
 }
 
-.newsheadimg:hover {
-    opacity: 0.7;
-}
-
-.othernews {
-    padding-top: 10px;
-    // padding-bottom: 10px;
-    a img:hover {
-        opacity: 0.7;
-        transform: scale(1.5, 1.5);
-    }
-}
-
-.newstext {
+.news {
+    border-bottom: 1px solid gray;
+    padding-bottom: 5px;
+    padding-left: 5px;
+    margin-top: -45px;
+    padding-top: 0;
     p {
-        font-size: 15px;
-        font-weight: 400;
+        color: orange;
+        margin-right: 5;
     }
     a {
-        margin-left: 12px;
+        color: #000;
     }
 }
-
-.europefutbol {
-    color: #A9A9A9;
-}
-
-.europefutbol:hover {
-    color: #A9A9A9;
-    // text-decoration: dashed;
-}
-
-.firstp {
-    margin: -10px;
-    font-weight: 600 !important;
-}
-
-.firstp:hover {
-    color: #60AE24;
-}
-
-.newsdate {
-    position: absolute;
-    top: 93.3%;
-    left: 43%;
-    font-size: 15px !important;
-    color: #A9A9A9;
-}
-
-.generalnews {
-    h4 {
-        display: flex;
-        align-items: center;
-        align-content: center;
-        justify-content: center;
-        padding-top: 45px;
-        width: 100%;
-        border-bottom: 2px solid orange;
-        padding-bottom: 5px;
-    }
-    &:hover {
-        text-decoration: none;
-    }
-}
-
-// ======================================================Third column=============================================
-.thirdcolumn {
-    background-color: #fff;
-    margin: 8px;
-    width: 348px;
-    max-width: 348px;
-    min-width: 348px;
+// ------------------------------------Middle column------------------------------------------
+.middlecolumn{
+    padding-right: 12px;
+    min-width: 728px;
+    max-width: 840px;
     display: table-cell;
-    vertical-align: top;
-    a h4 {
-        border-bottom: 2px solid orange;
+    margin-top: 8px;
+    background-color: #FFF;
+    .headnews{
+    font-size: 20pt;
+    margin: 0;
+    padding: 25px 16px 5px;
     }
-}
-
-.matches {
-    ul {
-        justify-content: center;
-        display: inline-block;
-        border-bottom: 0;
-        border-bottom: 1px solid #cacaca;
-        margin: 10px auto;
-        overflow: inherit;
-        height: 25px;
-        li {
-            list-style-type: none;
-            padding-right: 10px;
-            a {
-                color: #000;
-                font-weight: 500;
+    .sharenews{
+        margin-left: auto;
+        margin-right: auto;
+        }
+        .shareiconsvg{
+            margin-left: 50px;
+        }
+        .sharetext{
+            font-size: 25px;
+            margin-top: 20px;
+        }
+        .shares{
+            margin-top: 40px;
+            letter-spacing: 10px;
+        }
+        .ndate{
+            color: rgba(128, 128, 128, 0.623);
+        }
+        .shareinsta{
+            color: rgb(237,73,86);
+        }
+        .shareface{
+            color:  #4867AA;
+        }
+        .nabout{
+                margin: 8px;
+            p{
+                font-size: 20px;
+            }
+            
+        }
+        .tgkanal{
+            background-color: #00a2ff;
+            color: #FFF;
+            padding: 18px;
+            border-radius: 10px;
+            p{
+                font-size: 22px;
+            }
+            a{
+                text-decoration: none;
+                border-bottom: 1px dashed #FFF;
+                color: #FFF;
+                font-weight: 600;
             }
         }
     }
-    .todaymateches {
-        a {
-            font-weight: 600;
-            color: #000;
-        }
-        .starttime {
-            p {
-                color: #000;
-            }
-        }
-        .today {
-            color: orange;
-            font-weight: 700;
-        }
-    }
-    .teams:hover {
-        background-color: #60ae2491;
-    }
-    .scores {
-        opacity: 1;
-    }
-    .nostart {
-        color: #60AE24 !important;
-        font-weight: 400;
-        border-bottom: 1px solid gray;
-    }
-    // ---------------------------yesterday---------------------------------
-    #allgames {
-        display: block;
-    }
-    #todaygames {
-        display: block;
-    }
-    #yesterdaygames {
-        display: block;
-    }
-    #tomorrowgames {
-        display: block;
-    }
-}
 
-//--------------------Fourth column----------------------------
-.fourthcolumn {
+
+// -----------------------------------------Third column-----------------------------------------------
+.thirdcolumn{
     width: 220px;
     margin-top: 8px;
+    margin-left: 8px;
     min-width: 220px;
     max-width: 220px;
+    margin-bottom: 0;
+    padding-bottom: 0;
     display: table-cell;
     vertical-align: top;
     background-color: #fff;
+}
+
+.selectoption {
+    ul {
+        display: inline-block;
+        display: flex;
+        border-bottom: 1px solid gray;
+        justify-content: center;
+        li {
+            list-style-type: none;
+            a {
+                margin: 0 20px;
+                color: #000;
+            }
+        }
+    }
+    .commands {
+        text-align: center;
+        select {
+            width: 90%;
+            option:hover {
+                background-color: #FFF !important;
+            }
+        }
+        .tableOchko {
+            padding: 5px;
+            margin: 5px;
+            background-color: #E9E9E9;
+            margin-top: 10px;
+        }
+        .teams {
+            a {
+                color: #000;
+            }
+        }
+    }
+}
+
+
+
+  // ----------------------------------------------Footer------------------------------------------------------
+  .footer {
+    // padding: 0 10px;
+    width: 100% !important;
+    // margin-left: -5px;
+    height: 60px;
+    background-color: #BDBDBD;
+    p {
+        font-weight: 500;
+        font-size: 20px;
+    }
+    .mobilever {
+        a {
+            color: #00a2ff;
+        }
+    }
+    .young {
+        svg {
+            color: #60AE24 !important;
+        }
+        span {
+            color: #60AE24;
+        }
+    }
+    .aboutfooter {
+        margin-left: auto;
+        padding-right: 10px;
+        margin-right: -10px;
+        ul {
+            li {
+                list-style-type: none !important;
+                
+                a {
+                    color: #000;
+                    font-size: 20px;
+                    padding: 5px;
+                }
+            }
+        }
+    }
 }

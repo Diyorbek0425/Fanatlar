@@ -1,25 +1,19 @@
-function tableOpenAll() {
-    var allgames = document.getElementById('allgames');
-    var todaymgames = document.getElementById('todaygames');
-    var yesterdaygames = document.getElementById('yesterdaygames');
-    var tomorrowgames = document.getElementById('tomorrowgames');
+function openmodallog(){
+    var modallogin = document.getElementById('modallogin');
+    modallogin.style.zIndex= "100";   
+}
 
-    allgames.style.display = 'block';
-    todaymgames.style.displayc = 'block';
-    yesterdaygames.style.display = 'block';
-    tomorrowgames.style.display = 'block'
+function closemodallog(){
+    var modallogin = document.getElementById('modallogin');
+    modallogin.style.zIndex= "-1";
 
 }
 
-function tableOpenToday() {
-    var allgames = document.getElementById('allgames');
-    var todaymgames = document.getElementById('todaygames');
-    var yesterdaygames = document.getElementById('yesterdaygames');
-    var tomorrowgames = document.getElementById('tomorrowgames');
-
-    allgames.style.display = 'none';
-    todaymgames.style.displayc = 'block';
-    yesterdaygames.style.display = 'none';
-    tomorrowgames.style.display = 'none'
-
+function opensignin(){
+     document.getElementById('modalname').style.display  = 'flex';
+     document.getElementById('modalnum').style.display  = 'flex';
+     document.getElementById('signabout').style.display = "none";
+     document.getElementById('userimg').style.display = 'none';
+     document.getElementById('plusimg').style.display = 'flex';
+    document.getElementById('aboutlog').innerHTML = "Ro'yxatdan o'ting";
 }
