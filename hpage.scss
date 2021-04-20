@@ -1,0 +1,749 @@
+                * {
+                    margin: 0;
+                    padding: 0;
+                    box-sizing: border-box;
+                }
+                
+                p {
+                    margin: 0;
+                    padding: 0;
+                }
+                
+                body {
+                    background-color: #E9E9E9;
+                }
+                :focus{
+                    outline: none;
+                }
+// ----------------------------------Modals-------------------------------------------------
+
+
+                .modallogin{
+                    width: 100% !important;
+                    height: 700px;
+                    background-color: rgba(0, 0, 0, 0.658);
+                    display: block;
+                    position: absolute;
+                    min-width: 1260px;
+                    max-width: 1382px;
+                    margin: auto !important;
+                    z-index: -10;
+                    .modallogname{
+                        border-top: none;
+                        border-right: none;
+                        border-left: none;
+                        border-bottom: 0.4px solid gray;
+                        display: none;
+                        justify-content: center;
+                        margin: auto;
+                        color: #FFF;
+                        background-color: transparent;
+                    }
+                    .modallognum{
+                        border-top: none;
+                        border-right: none;
+                        border-left: none;
+                        border-bottom: 0.4px solid gray;
+                        display: none;
+                        justify-content: center;
+                        margin: auto;
+                        color: #FFF;
+                        background-color: transparent;
+                    }
+                    .modallogemail{
+                        border-top: none;
+                        border-right: none;
+                        border-left: none;
+                        border-bottom: 0.4px solid gray;
+                        display: flex;
+                        justify-content: center;
+                        margin: auto;
+                        color: #FFF;
+                        background-color: transparent;
+                    }
+                    .modallogpass{
+                        border-top: none;
+                        border-right: none;
+                        border-left: none;
+                        border-bottom: 0.4px solid gray;
+                        display: flex;
+                        color: #FFF;
+                        justify-content: center;
+                        margin: auto;
+                       
+                        background-color: transparent;
+                    }
+                    .modallogcheck{
+                      
+                        display: flex;
+                        justify-content: center;
+                        margin: auto;
+                        
+                        background-color: transparent;
+                    }
+                    ::-webkit-input-placeholder{
+                        color: #FFF;
+                        font-size: 20px;
+                    }
+                    .loghead{
+                        padding: 20px 20px ;
+                        // border-radius: 50px;
+                        margin: auto;
+                        background-color: #5644C1 !important;
+                        margin-top: 100px;
+                        width: 40%;
+                        height: 80%;
+                        background-color: #ffffff;
+                        
+                        p{
+                            text-align: center;
+                            color: #fff;
+                            font-size: 20px;
+                            font-family: sans-serif;
+                            font-weight: 500;
+                        }
+                        .modalloguserimg{
+                            display: flex;
+                        }
+                        .modallogaddimg{
+                            display: none;
+                        }
+                        .sendform{
+                            padding: 5px 8px;
+                            display: flex;
+                            justify-content: center;
+                            background-color: #FFF;
+                            border: none;
+                            color: rgb(226, 82, 14);
+                            border-radius: 10px;
+                            max-width: 100px;
+                            margin: auto;
+                        }
+                        
+                        span{
+                            a:hover{
+                                color: #FFF !important;
+                            }
+                        }
+                    }
+
+                }
+                .umumiy {
+                    height: auto;
+                    width: 100%;
+                    min-height: 100%;
+                    padding-left: 15px;
+                    padding-right: 15px;
+                    padding-top: 13px;
+                    position: relative;
+                    margin-bottom: -57px;
+                    min-width: 1260px;
+                    max-width: 1382px;
+                    margin: 0 auto;
+                    background-color: #e9e9e9;
+                }
+                
+                // =====================================================Navbar=============================================
+                .firstnav {
+                    display: flex;
+                    height: auto;
+                    width: 100%;
+                    .navbar-logo {
+                        display: flex;
+                        font-weight: 700;
+                        align-items: center;
+                        margin-left: 10px;
+                        a {
+                            font-size: 25px;
+                            background-color: #60AE24;
+                            border-radius: 10px;
+                            padding: 5px 0px 5px 8px;
+                            color: #fff;
+                            span {
+                                border-radius: 10px;
+                                background-color: #fff;
+                                color: #60AE24;
+                                padding: 8px 10px 8px 0px;
+                                width: 100%;
+                                margin: 0;
+                            }
+                            &:hover {
+                                text-decoration: none;
+                            }
+                        }
+                    }
+                }
+                
+                .links {
+                    display: flex;
+                    margin-left: auto;
+                    ul {
+                        display: flex;
+                        padding: 10px;
+                        margin: 5px 0;
+                        background-color: #60AE24;
+                        li {
+                            list-style-type: none;
+                            margin-left: 10px;
+                            a {
+                                display: flex;
+                                font-size: 23px;
+                                color: #FFF !important;
+                                border-right: 1px solid gray;
+                                padding-right: 5px;
+                                font-weight: 600;
+                            }
+                            & a:hover {
+                                text-decoration: none;
+                            }
+                        }
+                    }
+                    .signup {
+                        display: flex;
+                        font-size: 23px;
+                        margin: 5px 50px 5px 50px;
+                        padding: 5px;
+                        background-color: orange;
+                        color: #FFF;
+                    }
+                    .signup:hover {
+                        text-decoration: none;
+                    }
+                }
+                
+                .signup::before {
+                    content: "";
+                    position: absolute;
+                    top: 1.07%;
+                    left: 72.5%;
+                    width: 50px;
+                    height: 50px;
+                    border-bottom: 27px solid orange;
+                    border-left: 27px solid #60AE24;
+                    border-right: 27px solid orange;
+                    border-top: 27px solid #60AE24;
+                    background-color: transparent;
+                }
+                
+                .signup::after {
+                    content: "";
+                    position: absolute;
+                    top: 1.07%;
+                    left: 81.6%;
+                     width: 50px; 
+                     height: 50px; 
+                    border-bottom: 27px solid transparent;
+                    border-left: 27px solid orange;
+                    border-right: 27px solid transparent;
+                    border-top: 27px solid orange;
+                    background-color: transparent;
+                }
+                
+                .links::before {
+                    content: "";
+                    // position: absolute;
+                    // top: 1.1%;
+                    // left: 28.6%;
+                    margin-top: 5px;
+                    width: 20px;
+                    height: 20px;
+                    border-bottom: 27px solid #60AE24;
+                    border-left: 27px solid #e9e9e9;
+                    border-right: 27px solid #60AE24;
+                    border-top: 27px solid #E9E9E9;
+                    background-color: transparent;
+                }
+                
+                .social-links {
+                    // padding-top: 20px;
+                    display: flex;
+                    align-items: center;
+                    background-color: transparent;
+                    a {
+                        margin: 5px;
+                        border-radius: 50%;
+                        width: 30px;
+                        height: 30px;
+                    }
+                    .facebooklink {
+                        a {
+                            background-color: #4867AA;
+                            padding: 10px 15px 10px 15px;
+                            color: #FFF;
+                        }
+                        &:hover a i {
+                            transform: rotateX(-180deg);
+                        }
+                    }
+                    .youtubelink {
+                        a {
+                            background-color: #FC0000;
+                            color: #FFF;
+                            padding: 10px 11px 10px 11px;
+                        }
+                    }
+                    .twitterlink {
+                        a {
+                            background-color: #50ABF1;
+                            color: #FFF;
+                            padding: 10px 11px 10px 11px;
+                        }
+                    }
+                    .instagramlink {
+                        a {
+                            background-color: #F14E46;
+                            color: #FFF;
+                            padding: 10px 13px 10px 13px;
+                        }
+                    }
+                }
+                
+                .uzbgames {
+                    position: absolute;
+                    width: 60%;
+                    top: 100%;
+                    display: table-cell;
+                    left: 22%;
+                    z-index: 1000;
+                    background-color: white;
+                    ul {
+                        padding-right: 5px;
+                        border-right: 1 px solid gray;
+                        li {
+                            list-style-type: none;
+                            a {
+                                max-width: 220px;
+                                padding-bottom: 5px;
+                                border-bottom: 1px solid gray;
+                            }
+                        }
+                    }
+                }
+                
+                .secondNav {
+                    width: 100%;
+                    height: 50px;
+                    display: flex;
+                    flex-direction: row;
+                    justify-content: center;
+                    align-items: center;
+                    .musobaqalar {
+                        display: flex;
+                        flex-direction: row;
+                        justify-content: center;
+                        align-items: center;
+                        height: 100%;
+                        width: 91%;
+                        background: white;
+                        color: #60AE24;
+                        position: relative;
+                        
+                        div {
+                            font-size: 20px;
+                            font-weight: 500;
+                            margin-right: 105px;
+                        }
+                        a {
+                            // display: flex;
+                            height: 100%;
+                            color: #000;
+                            text-decoration: none;
+                            font-size: 18px;
+                            font-weight: 400;
+                            text-align: center;
+                            padding: 0 20px;
+                            display: flex;
+                            align-items: center;
+                            &:hover {
+                                color: white;
+                                background-color: #60AE24;
+                            }
+                            i {
+                                font-weight: 200;
+                            }
+                        }
+                    }
+                }
+                
+                // ======================================================Firts column===================================================
+                .firstcolumn {
+                    margin: 8px;
+                    background-color: #fff;
+                    display: table-cell;
+                    width: 260x;
+                    max-width: 260px;
+                    min-width: 260px;
+                    padding-right: 12px;
+                    margin-bottom: 0;
+                    padding-bottom: 0;
+                    vertical-align: top;
+                }
+                
+                .newslink {
+                    font-size: 30px;
+                    margin: 10px;
+                    text-transform: capitalize;
+                    padding-bottom: 10px;
+                    h4 {
+                        border-bottom: 2px solid orange;
+                        max-width: 300px;
+                        display: flex;
+                        justify-content: center;
+                        color: #000;
+                        padding-bottom: 5px;
+                    }
+                }
+                
+                .clonenews {
+                    border-bottom: 1px solid gray;
+                    padding-bottom: 5px;
+                    margin-top: 0px;
+                    padding-top: 0;
+                    p {
+                        color: orange;
+                        margin-right: 5;
+                    }
+                    a {
+                        color: #000;
+                    }
+                }
+                
+                .newslink:hover {
+                    text-decoration: none;
+                }
+                
+                .news {
+                    border-bottom: 1px solid gray;
+                    padding-bottom: 5px;
+                    padding-left: 5px;
+                    margin-top: -45px;
+                    padding-top: 0;
+                    p {
+                        color: orange;
+                        margin-right: 5;
+                    }
+                    a {
+                        color: #000;
+                    }
+                }
+                
+                // ============================================================second column=========================================================
+                .secondcolumn {
+                    margin-top: 8px;
+                    background-color: #fff;
+                    min-width: 370px;
+                    max-width: 480px;
+                    display: table-cell;
+                    width: auto;
+                    // padding-right: 1px;
+                    vertical-align: top;
+                }
+                
+                .generalnews {
+                    h4 {
+                        display: flex;
+                        align-items: center;
+                        align-content: center;
+                        justify-content: center;
+                        padding-top: 45px;
+                        width: 100%;
+                        border-bottom: 2px solid orange;
+                        color: #000;
+                        padding-bottom: 5px;
+                    }
+                    &:hover {
+                        text-decoration: none;
+                    }
+                }
+                
+                .inimage {
+                    background: #000;
+                    transition: 0.4s ease;
+                    height: auto;
+                    a img {
+                        transition: opacity 0.4s ease;
+                        height: auto;
+                    }
+                }
+                
+                .new1 {
+                    background-color: #fff;
+                    display: block;
+                    margin: 0 5px 0 5px;
+                    z-index: 12;
+                    padding-bottom: 15px;
+                    a {
+                        display: flex;
+                        justify-content: flex-start;
+                        font-size: 25px;
+                        color: black;
+                        transition: 0.4s ease;
+                        font-weight: 500;
+                        // transition: all 5s ease-in-out;
+                    }
+                    p {
+                        color: #A9A9A9;
+                    }
+                }
+                
+                .new1 a:hover {
+                    color: #60AE24;
+                    text-decoration: none;
+                }
+                
+                .newsheadimg:hover {
+                    opacity: 0.7;
+                }
+                
+                .othernews {
+                    padding-top: 10px;
+                    // padding-bottom: 10px;
+                    a img:hover {
+                        opacity: 0.7;
+                        transform: scale(1.5, 1.5);
+                    }
+                }
+                
+                .newstext {
+                    p {
+                        font-size: 15px;
+                        font-weight: 400;
+                    }
+                    a {
+                        margin-left: 12px;
+                    }
+                }
+                
+                .europefutbol {
+                    color: #A9A9A9;
+                }
+                
+                .europefutbol:hover {
+                    color: #A9A9A9;
+                    // text-decoration: dashed;
+                }
+                
+                .firstp {
+                    margin: -10px;
+                    font-weight: 600 !important;
+                }
+                
+                .firstp:hover {
+                    color: #60AE24;
+                }
+                
+                .newsdate {
+                    position: absolute;
+                    top: 93.3%;
+                    left: 43%;
+                    font-size: 15px !important;
+                    color: #A9A9A9;
+                }
+                
+                .generalnews {
+                    h4 {
+                        display: flex;
+                        align-items: center;
+                        align-content: center;
+                        justify-content: center;
+                        padding-top: 45px;
+                        width: 100%;
+                        border-bottom: 2px solid orange;
+                        padding-bottom: 5px;
+                    }
+                    &:hover {
+                        text-decoration: none;
+                    }
+                }
+                
+                // ======================================================Third column=============================================
+                .thirdcolumn {
+                    background-color: #fff;
+                    margin: 8px;
+                    width: 348px;
+                    max-width: 348px;
+                    min-width: 348px;
+                    display: table-cell;
+                    margin-bottom: 0;
+                    padding-bottom: 0;
+                    vertical-align: top;
+                    a h4 {
+                        border-bottom: 2px solid orange;
+                    }
+                }
+                
+                .matches {
+                    margin: 0 5px 0 5px;
+                    ul {
+                        justify-content: center;
+                        display: inline-block;
+                        border-bottom: 0;
+                        border-bottom: 1px solid #cacaca;
+                        margin: 10px auto;
+                        overflow: inherit;
+                        height: 25px;
+                        li {
+                            list-style-type: none;
+                            padding-right: 10px;
+                            a {
+                                color: #000;
+                                font-weight: 400;
+                            }
+                        }
+                    }
+                    .names {
+                        a {
+                            font-weight: 400 !important;
+                        }
+                    }
+                    .todaymateches {
+                        a {
+                            font-weight: 700;
+                            color: #000;
+                        }
+                        .starttime {
+                            p {
+                                color: #000;
+                            }
+                        }
+                        .today {
+                            color: orange;
+                            font-weight: 700;
+                        }
+                    }
+                    .teams:hover {
+                        background-color: #60ae2491;
+                    }
+                    .scores {
+                        opacity: 1;
+                    }
+                    .nostart {
+                        color: #60AE24 !important;
+                        font-weight: 400;
+                        border-bottom: 1px solid gray;
+                    }
+                    // ---------------------------yesterday---------------------------------
+                    #allgames {
+                        display: block;
+                    }
+                    #todaygames {
+                        display: block;
+                    }
+                    #yesterdaygames {
+                        display: block;
+                    }
+                    #tomorrowgames {
+                        display: block;
+                    }
+                }
+                
+                //--------------------Fourth column----------------------------
+                .fourthcolumn {
+                    width: 220px;
+                    margin-top: 8px;
+                    min-width: 220px;
+                    max-width: 220px;
+                    margin-bottom: 0;
+                    padding-bottom: 0;
+                    display: table-cell;
+                    vertical-align: top;
+                    background-color: #fff;
+                }
+                
+                .selectoption {
+                    ul {
+                        display: inline-block;
+                        display: flex;
+                        border-bottom: 1px solid gray;
+                        justify-content: center;
+                        li {
+                            list-style-type: none;
+                            a {
+                                margin: 0 20px;
+                                color: #000;
+                            }
+                        }
+                    }
+                    .commands {
+                        text-align: center;
+                        select {
+                            width: 90%;
+                            option:hover {
+                                background-color: #FFF !important;
+                            }
+                        }
+                        .tableOchko {
+                            padding: 5px;
+                            margin: 5px;
+                            background-color: #E9E9E9;
+                            margin-top: 10px;
+                        }
+                        .teams {
+                            a {
+                                color: #000;
+                            }
+                        }
+                    }
+                }
+                
+                // -------------------------------------Up to top------------------------------
+                .uptotop{
+                    position: fixed;
+                    left: 3%;
+                    top: 90%;
+                    transition: 5 ease ;
+                    display: none;
+                    div{
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                        background-color: #60AE24;
+                        width: 50px;
+                        height: 50px;
+                        border-radius: 25px;
+
+                        svg{
+                            color: #FFF;
+                            font-size: 30px;
+                        }
+                    }
+                }
+                // ----------------------------------------------Footer------------------------------------------------------
+                .footer {
+                    // padding: 0 10px;
+                    width: 100%;
+                    margin-left: -5px;
+                    height: 60px;
+                    background-color: #BDBDBD;
+                    p {
+                        font-weight: 500;
+                        font-size: 20px;
+                    }
+                    .mobilever {
+                        a {
+                            color: #00a2ff;
+                        }
+                    }
+                    .young {
+                        svg {
+                            color: #60AE24 !important;
+                        }
+                        span {
+                            color: #60AE24;
+                        }
+                    }
+                    .aboutfooter {
+                        margin-left: auto;
+                        padding-right: 10px;
+                        margin-right: -10px;
+                        ul {
+                            li {
+                                list-style-type: none !important;
+                                a {
+                                    color: #000;
+                                    font-size: 20px;
+                                }
+                            }
+                        }
+                    }
+                }
